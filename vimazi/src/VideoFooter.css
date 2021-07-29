@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.videoFooter {
+  position: absolute;
+  color: white;
+  bottom: 2%;
+  margin-left: 20px;
+  margin-right: 100px;
+  display: flex;
+  padding: 20px;
+  /* text-shadow: 0.5px 0.5px #110101; */
+}
+
+.videoFooter_text {
+  flex: 1;
+}
+
+.videoFooter_text > p {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
+.videoFooter_text > h2 {
+  padding-bottom: 8px;
+  color: #f1ecff;
+}
+
+.videoFooter_icon {
+  position: absolute;
+  color: #eee5e5;
+  font-size: 30px;
+}
+
+.videoFooter_ticker > .ticker {
+  height: fit-content;
+  margin-left: 40px;
+  color: #ffeaea;
+  width: 250px;
+}
+
+@media (max-width: 520px) {
+  .videoFooter {
+    font-size: 1.5vmax;
+    margin-left: 10px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .videoFooter p {
+    font-size: 1.5vmax;
+    margin-right: 50px;
+  }
+}

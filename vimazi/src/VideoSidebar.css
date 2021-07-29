@@ -1,0 +1,32 @@
+.videoSidebar {
+  position: absolute;
+  bottom: 4%;
+  right: 10px;
+  color: white;
+}
+
+.videoSidebar_button {
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  background: rgba(250, 156, 156, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.videoSidebar_button:hover {
+  background: rgba(133, 27, 27, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(34, 23, 23, 0.1);
+}
+
+@media (max-width: 520px) {
+  /* .videoSidebar {
+    bottom: 35%;
+  } */
+  .videoSidebar_button {
+    padding: 15px;
+    margin-right: 10px;
+  }
+}

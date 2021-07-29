@@ -1,0 +1,173 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.app {
+  height: 100vh;
+  /* background-color: black; */
+  background: linear-gradient(
+    -45deg,
+    #202020,
+    #031d2e,
+    #2b2222,
+    #27332a,
+    #38254d,
+    #492b33
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: grid;
+  place-items: center;
+}
+
+.app_videos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 18px;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 850px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  z-index: 10;
+  transform: scale(0.9);
+}
+
+.app_video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 18px;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 850px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  z-index: 10;
+  transform: scale(0.9);
+}
+
+/* .app_video {
+  position: relative;
+  height: 850px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  transform: scale(0.9);
+} */
+
+/* chrome safari opera */
+.app_video::-webkit-scrollbar {
+  display: none;
+}
+
+/* edge,ie,firefox */
+.app_video {
+  -ms-overflow-style: none; /*IE Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 11s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 11s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 11s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 11s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* #hideback { */
+/* -moz-animation: backvideo 0s ease-in 11s forwards; */
+/* Firefox */
+/* -webkit-animation: backvideo 0s ease-in 11s forwards; */
+/* Safari and Chrome */
+/* -o-animation: backvideo 0s ease-in 11s forwards; */
+/* Opera */
+/* animation: backvideo 0s ease-in 11s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+} */
+
+/* @keyframes backvideo {
+  from {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    height: 850px;
+    width: 80%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes backvideo {
+  from {
+    height: 0;
+    width: 0;
+  }
+  to {
+    height: 850px;
+    width: 80%;
+  }
+} */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .app_videos {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .app_video {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
