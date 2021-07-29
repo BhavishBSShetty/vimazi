@@ -60,16 +60,6 @@ html {
   transform: scale(0.9);
 }
 
-/* .app_video {
-  position: relative;
-  height: 850px;
-  border-radius: 20px;
-  width: 80%;
-  max-width: 500px;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-  transform: scale(0.9);
-} */
 
 /* chrome safari opera */
 .app_video::-webkit-scrollbar {
@@ -110,40 +100,6 @@ html {
   }
 }
 
-/* #hideback { */
-/* -moz-animation: backvideo 0s ease-in 11s forwards; */
-/* Firefox */
-/* -webkit-animation: backvideo 0s ease-in 11s forwards; */
-/* Safari and Chrome */
-/* -o-animation: backvideo 0s ease-in 11s forwards; */
-/* Opera */
-/* animation: backvideo 0s ease-in 11s forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-} */
-
-/* @keyframes backvideo {
-  from {
-    height: 0;
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    height: 850px;
-    width: 80%;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes backvideo {
-  from {
-    height: 0;
-    width: 0;
-  }
-  to {
-    height: 850px;
-    width: 80%;
-  }
-} */
 
 @keyframes gradient {
   0% {
